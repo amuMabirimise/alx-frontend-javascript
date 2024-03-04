@@ -1,13 +1,13 @@
-const taskFirst = () => {
+const taskFirst = function() {
 	var task = 'I prefer const when I can.';
 	return task;
 }
 
-const getLast = () => {
+const getLast = function() {
 	return ' is okay';
 }
 
-let taskNext = () => {
+let taskNext = function() {
 	var combination = 'But sometimes let';
 	combination += getLast();
 
