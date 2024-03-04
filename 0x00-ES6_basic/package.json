@@ -7,10 +7,11 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "dev": "node 0-main.js"
+    "dev": "npx babel-node 0-main.js"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
+    "@babel/node": "^7.23.9",
     "@babel/preset-env": "^7.24.0",
     "babel-jest": "^29.7.0",
     "eslint": "^8.57.0",
