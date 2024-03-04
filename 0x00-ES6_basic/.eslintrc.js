@@ -1,15 +1,17 @@
 module.exports = {
   env: {
-    commonjs: true,
-    es2021: true,
+    es6: true,
     node: true,
-    jest: true
   },
-  extends: "eslint:recommended",
+  extends: 'eslint:recommended',
   parserOptions: {
-    ecmaVersion: 12
+    ecmaVersion: 2018,
   },
   rules: {
-    // Additional rules can be added here
-  }
+    indent: ['error', 2],
+    'linebreak-style': ['error', 'unix'],
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
+  },
 };
+
