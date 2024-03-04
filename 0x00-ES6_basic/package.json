@@ -1,0 +1,23 @@
+{
+  "name": "0x00-ES6_basic",
+  "version": "1.0.0",
+  "description": "0x00. ES6 Basics JavaScript ES6 By: Johann Kerbrat, Engineering Manager at Uber Works Weight: 1 Project will start Mar 4, 2024 6:00 AM, must end by Mar 5, 2024 6:00 AM Checker will be released at Mar 4, 2024 12:00 PM An auto review will be launched at the deadline Concepts For this project, we expect you to look at these concepts:",
+  "type": "module",
+  "main": "0-constants.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "dev": "node 0-main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0"
+  }
+}
+
