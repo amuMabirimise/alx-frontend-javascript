@@ -13,13 +13,8 @@ class EVCar extends Car {
   }
 
   cloneCar() {
-    const clonedCar = new Car();
-    Object.keys(this).forEach((key) => {
-      if (key.startsWith('_')) {
-        clonedCar[key] = this[key];
-      }
-    });
-    return clonedCar;
+    const clonedCar = super.cloneCar();
+    return Object.setPrototypeOf(clonedCar, Car.prototype);
   }
 }
 
