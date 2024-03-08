@@ -1,24 +1,17 @@
-import Car from './10-car.js';
-
-const _range = Symbol('range');
+import Car from './10-car';
 
 class EVCar extends Car {
   constructor(brand, motor, color, range) {
-    super(brand, motor, color);
-    this[_range] = range;
-  }
-
-  get range() {
-    return this[_range];
+    super();
+    this._brand = brand;
+    this._motor = motor;
+    this._color = color;
+    this._range = range;
   }
 
   cloneCar() {
     const clonedCar = new Car();
-    Object.keys(this).forEach((key) => {
-      if (key.startsWith('_')) {
-        clonedCar[key] = this[key];
-      }
-    });
+    Object.assign(clonedCar, this);
     return clonedCar;
   }
 }
